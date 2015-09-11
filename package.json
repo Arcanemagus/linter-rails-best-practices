@@ -1,0 +1,18 @@
+{
+  "name": "linter-rails-best-practices",
+  "main": "./lib/linter-rails-best-practices",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "linter-rails-best-practices:toggle"
+  },
+  "repository": "https://github.com/atom/linter-rails-best-practices",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
