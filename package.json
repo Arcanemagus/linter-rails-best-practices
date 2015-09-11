@@ -1,18 +1,28 @@
 {
   "name": "linter-rails-best-practices",
   "main": "./lib/linter-rails-best-practices",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.1.0",
+  "description": "Atom linter plugin for Rails best practices",
   "keywords": [
+    "ruby",
+    "rails",
+    "linter"
   ],
-  "activationCommands": {
-    "atom-workspace": "linter-rails-best-practices:toggle"
-  },
-  "repository": "https://github.com/atom/linter-rails-best-practices",
+  "repository": "https://github.com/masolin/linter-rails-best-practices",
+  "bugs": "https://github.com/masolin/linter-rails-best-practices/issues",
+  "homepage": "https://github.com/masolin/linter-rails-best-practices#readme",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-linter": "^3.2.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
   }
 }
