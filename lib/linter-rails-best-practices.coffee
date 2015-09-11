@@ -29,7 +29,7 @@ module.exports =
       title: 'Extra Options'
       description: 'Options for `rails_best_practices` command'
       type: 'string'
-      default: ''
+      default: '--without-color'
 
   activate: (state) ->
     linterName = 'linter-rails-best-practices'
