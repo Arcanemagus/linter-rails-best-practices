@@ -7,10 +7,11 @@ lint = (editor, command, options) ->
 
   new Promise (resolve, reject) ->
     stdout = ''
+    args = ['--without-color', '--silent', options, file].filter(Boolean)
 
     new BufferedProcess
       command: command
-      args: [options, file]
+      args: args
       stdout: (data) -> stdout += data
       exit: ->
         warnings = helpers.parse(stdout, regex).map (message) ->
@@ -29,7 +30,7 @@ module.exports =
       title: 'Extra Options'
       description: 'Options for `rails_best_practices` command'
       type: 'string'
-      default: '--without-color'
+      default: ''
 
   activate: (state) ->
     linterName = 'linter-rails-best-practices'
