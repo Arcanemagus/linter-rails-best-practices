@@ -1,5 +1,6 @@
 linter-rails-best-practices
 =========================
+![screenshot](screenshot.gif)
 
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides
 an interface to
