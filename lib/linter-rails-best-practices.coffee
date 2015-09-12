@@ -47,7 +47,15 @@ module.exports =
 
   provideLinter: ->
     provider =
-      grammarScopes: ['source.ruby.rails']
+      grammarScopes: [
+        'source.ruby',
+        'source.ruby.rails',
+        'source.ruby.rabl',
+        'text.html.ruby',
+        'text.html.erb',
+        'text.haml',
+        'text.slim'
+      ]
       scope: 'file'
       lintOnFly: true
       lint: (editor) => lint editor, @executablePath, @extraOptions
