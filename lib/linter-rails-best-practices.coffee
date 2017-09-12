@@ -48,6 +48,7 @@ module.exports =
 
   provideLinter: ->
     provider =
+      name: 'rails_best_practices'
       grammarScopes: [
         'source.ruby',
         'source.ruby.rails',
